@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Añadir Recompensa</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <h1>Añadir Recompensa</h1>
+  <form action="/add-recompensa" method="POST">
+    <label for="tipo_recompensa">Tipo de Recompensa:</label>
+    <input type="text" name="tipo_recompensa" required>
+    
+    <label for="valor">Valor:</label>
+    <input type="number" name="valor" required>
+    
+    <label for="condiciones">Condiciones:</label>
+    <input type="text" name="condiciones" required>
+    
+    <label for="empleado_id">ID del Empleado:</label>
+    <input type="number" name="empleado_id" required>
+    
+    <label for="fecha_emision">Fecha de Emisión:</label>
+    <input type="date" name="fecha_emision" required>
+    
+    <button type="submit">Añadir Recompensa</button>
+  </form>
+  
+  <a href="/">Volver a la Página Principal</a>
+</body>
+</html>

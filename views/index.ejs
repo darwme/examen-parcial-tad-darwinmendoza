@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recompensas - Betterfly</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <h1>Recompensas Registradas</h1>
+  <ul>
+    <% recompensas.forEach(function(recompensa) { %>
+      <li><%= recompensa.tipo_recompensa %> - <%= recompensa.valor %> - <%= recompensa.fecha_emision %></li>
+    <% }); %>
+  </ul>
+
+  <a href="/add-recompensa">Añadir Recompensa</a>
+</body>
+</html>
